@@ -11,6 +11,7 @@
   <script src="vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="gallery.js" defer></script>
   <script src="motion.js" defer></script>
+  <script src="estate-history.js" defer></script>
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to story</a>
@@ -123,6 +124,22 @@
     </div>
     <section id="redevelopment" class="chapter" aria-labelledby="redevelopment-title">
       <div class="wrap chapter-heading"><p class="eyebrow">The rebuild</p><h2 id="redevelopment-title">A 20-year rebuild, done in phases</h2></div>
+      <figure class="estate-history wrap" aria-labelledby="estate-history-title" hidden>
+        <figcaption id="estate-history-title">The estate through the years</figcaption>
+        <canvas width="320" height="160" aria-hidden="true"></canvas>
+        <div class="history-details" aria-live="polite" aria-atomic="true">
+          <p class="history-year"></p>
+          <h3></h3>
+          <p class="history-description"></p>
+        </div>
+        <div class="history-controls" role="group" aria-label="Estate history controls">
+          <button type="button" data-step="-1">← Previous</button>
+          <button type="button" data-step="1">Next →</button>
+          <button type="button" class="history-play">Autoplay</button>
+          <span class="history-position"></span>
+        </div>
+        <small>Animation reference: <a href="https://zoelsy01.github.io/choi-hung-estate/">LSY’s Choi Hung Estate timeline</a></small>
+      </figure>
       <figure class="timeline wrap" aria-labelledby="timeline-title">
         <figcaption id="timeline-title">Redevelopment timeline</figcaption>
         <ol class="timeline-list">
