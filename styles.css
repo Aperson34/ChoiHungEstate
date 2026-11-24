@@ -18,7 +18,7 @@ a { color: inherit; text-underline-offset: .23em; }
 a:hover { text-decoration-thickness: .14em; }
 :focus-visible { outline: 3px solid #b8461f; outline-offset: 4px; }
 .wrap { width: min(100% - 3rem, 76rem); margin-inline: auto; }
-.measure { width: min(100% - 3rem, 44rem); margin-inline: auto; }
+.measure { width: min(100% - 3rem, 76rem); margin-inline: auto; }
 .skip { position: fixed; z-index: 4; top: .5rem; left: .5rem; padding: .7rem 1rem; background: white; transform: translateY(-150%); }
 .skip:focus { transform: none; }
 .masthead { position: sticky; top: 0; z-index: 3; background: var(--paper); border-bottom: 1px solid var(--line); }
@@ -67,7 +67,7 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .source-list a { display: block; padding-block: .7rem; border-top: 1px solid var(--line); color: var(--green); }
 .footer { padding-block: 1.5rem; font-size: .875rem; }
 @media (max-width: 48rem) {
-  .wrap, .measure { width: calc(100% - 2rem); }
+  .wrap { width: calc(100% - 2rem); }
   .header-inner { flex-wrap: wrap; padding-top: .5rem; }
   .story-pair { grid-template-columns: 1fr; }
   .story-pair:nth-of-type(even) > .gallery { order: initial; }
