@@ -126,19 +126,17 @@
       <div class="wrap chapter-heading"><p class="eyebrow">The rebuild</p><h2 id="redevelopment-title">A 20-year rebuild, done in phases</h2></div>
       <figure class="estate-history wrap" aria-labelledby="estate-history-title" hidden>
         <figcaption id="estate-history-title">The estate through the years</figcaption>
-        <canvas width="320" height="160" aria-hidden="true"></canvas>
+        <canvas id="gameCanvas" width="750" height="480" tabindex="0"
+          aria-label="Pixel-art estate timeline. Use the arrow keys to change stages and Space to toggle autoplay."></canvas>
         <div class="history-details" aria-live="polite" aria-atomic="true">
-          <p class="history-year"></p>
-          <h3></h3>
-          <p class="history-description"></p>
+          <p id="yearDisplay" class="history-year"></p>
+          <p id="description" class="history-description"></p>
         </div>
         <div class="history-controls" role="group" aria-label="Estate history controls">
-          <button type="button" data-step="-1">← Previous</button>
-          <button type="button" data-step="1">Next →</button>
-          <button type="button" class="history-play">Autoplay</button>
-          <span class="history-position"></span>
+          <button id="prevBtn" type="button">◀ Prev</button>
+          <button id="nextBtn" type="button">Next ▶</button>
+          <button id="autoBtn" type="button">▶ Auto Play</button>
         </div>
-        <small>Animation reference: <a href="https://zoelsy01.github.io/choi-hung-estate/">LSY’s Choi Hung Estate timeline</a></small>
       </figure>
       <figure class="timeline wrap" aria-labelledby="timeline-title">
         <figcaption id="timeline-title">Redevelopment timeline</figcaption>
