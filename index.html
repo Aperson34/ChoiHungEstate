@@ -6,7 +6,10 @@
   <meta name="theme-color" content="#f7f4eb">
   <meta name="description" content="Choi Hung Estate’s residents have up to 20 years before they move. Its decades-old shops do not have that time.">
   <title>Choi Hung Estate begins a slow goodbye</title>
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="gallery.js" defer></script>
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to story</a>
@@ -29,28 +32,85 @@
     </section>
     <div id="story" class="opening">
     <section class="story-pair wrap" aria-label="Everyday life">
-      <figure class="photo photo-1">
-        <img src="assets/court.webp" alt="Residents and visitors at the estate’s outdoor court" width="1008" height="672" loading="lazy">
-        <figcaption>Everyday life at Choi Hung Estate.</figcaption>
-      </figure>
+      <div class="gallery swiper" role="region" aria-label="Everyday life gallery">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide">
+            <div class="crop overview"><img src="assets/court.webp" alt="Wide view of the painted courts below the housing blocks" width="1008" height="672" loading="lazy"></div>
+            <figcaption>The outdoor courts sit in front of a residential block.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop hoop"><img src="assets/court.webp" alt="Blue basketball hoop frame alongside the painted outdoor courts" width="1008" height="672" loading="lazy"></div>
+            <figcaption>A blue basketball structure rises over the painted court.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop people"><img src="assets/court.webp" alt="Children seated on the edge of the court near a red scooter" width="1008" height="672" loading="lazy"></div>
+            <figcaption>Children sit together beside a scooter at the edge of the court.</figcaption>
+          </figure>
+        </div>
+        <div class="gallery-bar">
+          <span>Photo from the wireframe</span>
+          <div class="gallery-controls">
+            <button class="gallery-prev" type="button" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <button class="gallery-next" type="button" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
       <div class="prose"><p>Under the lights, corrugated metal shutters are pulled down across Choi Hung Estate, with black-and-white signs marking the permanent closures of the stores. Compared with other estates, silence is approaching along with the redevelopment. Yet, elderly people still shuffle past ancient banyan trees rooted next to the stores, while two young girls pick out items at a grocery lined with cardboard stacks of dried goods and bottled drinks. Everyday life persists with quiet grace even as the estate slowly vanishes.</p></div>
     </section>
     <aside class="film wrap"><span class="eyebrow">Video</span><h3>Lee Kwok-nam</h3><p>Footage pending</p></aside>
     <section class="story-pair wrap" aria-label="Around the court">
-      <figure class="photo photo-2">
-        <img src="assets/court.webp" alt="Residents and visitors at the estate’s outdoor court" width="1008" height="672" loading="lazy">
-        <figcaption>Around the court at Choi Hung Estate.</figcaption>
-      </figure>
+      <div class="gallery swiper" role="region" aria-label="Around the court gallery">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide">
+            <div class="crop hoop"><img src="assets/court.webp" alt="Blue basketball hoop frame alongside the painted outdoor courts" width="1008" height="672" loading="lazy"></div>
+            <figcaption>A blue basketball structure rises over the painted court.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop people"><img src="assets/court.webp" alt="Children seated on the edge of the court near a red scooter" width="1008" height="672" loading="lazy"></div>
+            <figcaption>Children sit together beside a scooter at the edge of the court.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop overview"><img src="assets/court.webp" alt="Wide view of the painted courts below the housing blocks" width="1008" height="672" loading="lazy"></div>
+            <figcaption>The outdoor courts sit in front of a residential block.</figcaption>
+          </figure>
+        </div>
+        <div class="gallery-bar">
+          <span>Photo from the wireframe</span>
+          <div class="gallery-controls">
+            <button class="gallery-prev" type="button" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <button class="gallery-next" type="button" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
       <div class="prose"><p>Under the colonnade of Kam Pik House, Lee Kwok-nam has repaired watches, clocks and glasses for most of his life. Most customers are Choi Hung residents, he said, but many travel from far away to find him.</p>
 <p>By the middle of next year, he plans to close.</p>
 <p>Upstairs and across the estate, the mood is calmer than the shuttered shops suggest. Many residents will not move for years, and when they do, most will stay close by.</p></div>
     </section>
     <aside class="film wrap"><span class="eyebrow">Video</span><h3>Mrs. Kan</h3><p>Footage pending</p></aside>
     <section class="story-pair wrap" aria-label="A shared space">
-      <figure class="photo photo-3">
-        <img src="assets/court.webp" alt="Residents and visitors at the estate’s outdoor court" width="1008" height="672" loading="lazy">
-        <figcaption>A shared space at Choi Hung Estate.</figcaption>
-      </figure>
+      <div class="gallery swiper" role="region" aria-label="A shared space gallery">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide">
+            <div class="crop people"><img src="assets/court.webp" alt="Children seated on the edge of the court near a red scooter" width="1008" height="672" loading="lazy"></div>
+            <figcaption>Children sit together beside a scooter at the edge of the court.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop overview"><img src="assets/court.webp" alt="Wide view of the painted courts below the housing blocks" width="1008" height="672" loading="lazy"></div>
+            <figcaption>The outdoor courts sit in front of a residential block.</figcaption>
+          </figure>
+          <figure class="swiper-slide">
+            <div class="crop hoop"><img src="assets/court.webp" alt="Blue basketball hoop frame alongside the painted outdoor courts" width="1008" height="672" loading="lazy"></div>
+            <figcaption>A blue basketball structure rises over the painted court.</figcaption>
+          </figure>
+        </div>
+        <div class="gallery-bar">
+          <span>Photo from the wireframe</span>
+          <div class="gallery-controls">
+            <button class="gallery-prev" type="button" aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <button class="gallery-next" type="button" aria-label="Next photo"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
       <div class="prose"><p>Mrs. Kan, 94, has lived in Choi Hung for "more than 60 years, almost 70." She is one of its first tenants and helped found the residents' association, where she still spends every day.</p>
 <p>Outside, the estate means something else to people who do not live there. On the afternoon we visited, we saw a large group of teenagers playing volleyball together. At the same time, elderly people were chit-chatting, parents were taking care of their children, and visitors were capturing their moments in Choi Hung Estate.</p>
 <p>Choi Hung is coming down slowly, but not everything is going at the same speed.</p></div>
@@ -59,7 +119,7 @@
     </div>
     <section id="redevelopment" class="chapter" aria-labelledby="redevelopment-title">
       <div class="wrap chapter-heading"><p class="eyebrow">The rebuild</p><h2 id="redevelopment-title">A 20-year rebuild, done in phases</h2></div>
-      <div class="prose measure"><p><strong>Text 4</strong></p>
+      <div class="prose measure">
 <p>Choi Hung Estate was completed between 1962 and 1964. With about 7,435 units, it is one of the oldest public rental housing estates still in use in Hong Kong, according to the <a href="https://app7.legco.gov.hk/rpdb/en/uploads/2025/ISSH/ISSH19_2025_20250707_en.pdf">LegCo Research Office</a>.</p>
 <p>On Dec. 6, 2024, the <a href="https://www.info.gov.hk/gia/general/202412/06/P2024120600218.htm">Housing Authority</a> announced clearance and rehousing arrangements for the first phase of the redevelopment.</p>
 <p>The estate's 11 residential blocks will be demolished and rebuilt in three phases, raising the number of flats from about 7,400 to about 9,200, verified by <a href="https://hongkongfp.com/2024/10/31/first-tenants-of-hong-kongs-choi-hung-estate-to-begin-moving-out-in-2028-as-redevelopment-set-for-2049-completion/">HKFP</a>.</p>
