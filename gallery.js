@@ -8,7 +8,11 @@ for (const gallery of document.querySelectorAll('.gallery')) {
       prevEl: gallery.querySelector('.gallery-prev'),
       nextEl: gallery.querySelector('.gallery-next'),
     },
-    a11y: { slideLabelMessage: '{{index}} of {{slidesLength}}' },
+    a11y: {
+      prevSlideMessage: 'Previous photo',
+      nextSlideMessage: 'Next photo',
+      slideLabelMessage: '{{index}} of {{slidesLength}}',
+    },
     on: {
       slideChange(swiper) {
         swiper.slides.forEach((slide, index) => {
