@@ -113,7 +113,7 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
   color: #f9f6ed;
   border-radius: .75rem;
   padding: clamp(1.4rem, 4vw, 3rem);
-  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+  margin-top: clamp(2.5rem, 6vw, 5rem);
 }
 .timeline figcaption { padding: 0; color: var(--lime); font-weight: 750; text-transform: uppercase; letter-spacing: .13em; }
 .timeline-list { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 1.6rem 0; list-style: none; }
