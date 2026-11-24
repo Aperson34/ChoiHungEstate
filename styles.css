@@ -95,3 +95,49 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .gallery-controls button:not(:disabled):hover { background: var(--green); color: white; }
 .gallery-controls button:not(:disabled):active { transform: scale(.94); }
 .gallery-controls button:disabled { opacity: .48; cursor: default; }
+
+.timeline {
+  background: #233f36;
+  color: #f9f6ed;
+  border-radius: .75rem;
+  padding: clamp(1.4rem, 4vw, 3rem);
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+.timeline figcaption { padding: 0; color: var(--lime); font-weight: 750; text-transform: uppercase; letter-spacing: .13em; }
+.timeline-list { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 1.6rem 0; list-style: none; }
+.timeline-item { position: relative; border-top: 1px solid #96aa8c; padding: 1.4rem 1rem 0 0; }
+.timeline-marker { display: block; position: absolute; top: -.375rem; left: 0; width: .75rem; height: .75rem; border-radius: 50%; background: var(--lime); }
+.timeline-item:last-child { padding-right: 0; }
+.timeline-date { color: var(--lime); font-size: .875rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.timeline h3 { font-size: clamp(1.5rem, 3vw, 2.7rem); line-height: 1.15; margin-block: .6rem; }
+.timeline-item p, .timeline-note { font-size: .875rem; max-width: 28ch; margin-bottom: 0; }
+.timeline-note { color: #dae1ce; }
+@keyframes arrive {
+  from { opacity: .68; transform: translateY(.65rem); }
+}
+@keyframes trace {
+  from { scale: 0 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-inner > * { animation: arrive 540ms cubic-bezier(.2,.75,.25,1) both; }
+  .hero-inner h1 { animation-delay: 50ms; }
+  .hero-inner .deck { animation-delay: 100ms; }
+  .hero-inner .story-link { animation-delay: 150ms; }
+  .story-pair.in-view, .chapter-heading.in-view, .timeline.in-view .timeline-item {
+    animation: arrive 480ms cubic-bezier(.2,.75,.25,1) both;
+  }
+  .timeline.in-view .timeline-item:nth-child(2) { animation-delay: 80ms; }
+  .timeline.in-view .timeline-item:nth-child(3) { animation-delay: 160ms; }
+  .timeline.in-view .timeline-item:nth-child(4) { animation-delay: 240ms; }
+  .timeline.in-view .timeline-item::after {
+    content: ''; position: absolute; top: -1px; left: 0; right: 0; height: 1px; background: var(--lime);
+    transform-origin: left; animation: trace 600ms ease-out both; animation-delay: inherit;
+  }
+}
+@media (max-width: 42rem) {
+  .timeline-list { grid-template-columns: 1fr; margin-left: .375rem; }
+  .timeline-item { padding: 0 0 1.4rem 1.1rem; border-top: 0; border-left: 1px solid #96aa8c; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-marker { top: .35rem; left: -.375rem; }
+  .timeline.in-view .timeline-item::after { display: none; }
+}
