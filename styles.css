@@ -185,5 +185,4 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 
 .knightlab-embed { display: block; width: 100%; border: 0; background: white; }
 .comparison-embed { margin-top: clamp(2rem, 5vw, 4rem); }
-.juxtapose.knightlab-embed { height: auto; aspect-ratio: 76 / 41.7; }
 .timeline-embed { margin-top: 1rem; }
