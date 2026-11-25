@@ -182,5 +182,5 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .history-controls button:hover { background: #f7f4eb; }
 
 .knightlab-embed { display: block; width: 100%; border: 0; background: white; }
-.comparison-embed { max-width: 950px; margin-top: clamp(2rem, 5vw, 4rem); }
+.comparison-embed { max-width: 1000px; margin-top: clamp(2rem, 5vw, 4rem); }
 .timeline-embed { margin-top: 1rem; }
