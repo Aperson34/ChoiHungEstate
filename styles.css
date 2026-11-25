@@ -72,8 +72,9 @@ figcaption { padding-top: .65rem; color: var(--muted); font-size: .875rem; }
 .film h3 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
 .film p { font-size: .875rem; margin: .3rem 0 0; }
 .interview-video iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; border-radius: .35rem; background: #000; }
-.interview-video figcaption { padding-top: .85rem; color: var(--muted); }
-.interview-video h3 { font: 650 1rem/1.5 system-ui, sans-serif; }
+.interview-video figcaption { padding: 0; margin-bottom: 1.25rem; color: var(--ink); }
+.interview-video h3 { font: 650 clamp(1.5rem, 2.5vw, 2rem)/1.2 system-ui, sans-serif; }
+.interview-video figcaption p { margin: .5rem 0 0; color: var(--muted); font: 1rem/1.5 system-ui, sans-serif; }
 .chapter { padding-block: clamp(3rem, 7vw, 7rem); border-top: 1px solid var(--line); }
 .chapter:nth-of-type(even) { background: #eeeee2; }
 .chapter-heading { margin-bottom: clamp(1.6rem, 4vw, 3.5rem); }
