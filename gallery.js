@@ -15,6 +15,7 @@ for (const gallery of document.querySelectorAll('.gallery')) {
     },
     on: {
       slideChange(swiper) {
+        gallery.querySelector('.gallery-counter').textContent = `${swiper.activeIndex + 1}/${swiper.slides.length}`;
         swiper.slides.forEach((slide, index) => {
           slide.setAttribute('aria-hidden', String(index !== swiper.activeIndex));
         });
