@@ -2,6 +2,8 @@
 
 Continue the editorial website update in [Aperson34/ChoiHungEstate](https://github.com/Aperson34/ChoiHungEstate) on `main`. The Google draft and revised wireframe have been applied; the remaining work is final copy, media replacement and live embed verification.
 
+`test.html` is an alternate storytelling layout for comparison; `index.html` remains the primary page. It preserves all existing wording, headings, captions, photos, videos and other embeds. Its order is opening/Lee, shops, rebuild, residents (including Mrs. Kan and the social-worker placeholder), preservation (including basketball), then StoryMap/neighbourhood/closing. No transitions or grammar were rewritten. Both pages use the same shared styles and scripts; later content edits need to account for this separate snapshot.
+
 ## Source files
 
 - Use **only the Text draft tab** as the source for article copy. Verify that the connector has returned that specific tab, especially if an export contains multiple tabs. Preserve the draft’s headings, quotations, and source links. [Google Doc](https://docs.google.com/document/d/1TsQz5fTUZN3u8hMgXT9FElLKBDvgINVNTMwRtC6axdA/edit?usp=sharing)
