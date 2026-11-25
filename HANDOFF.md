@@ -2,7 +2,7 @@
 
 Continue the editorial website update in [Aperson34/ChoiHungEstate](https://github.com/Aperson34/ChoiHungEstate) on `main`. The Google draft and revised wireframe have been applied; the remaining work is final copy, media replacement and live embed verification.
 
-`test.html` is an alternate storytelling layout for comparison; `index.html` remains the primary page. It preserves all existing wording, headings, captions, photos, videos and other embeds. Its order is opening/Lee, shops, rebuild, residents (including Mrs. Kan and the social-worker placeholder), preservation (including basketball), then StoryMap/neighbourhood/closing. No transitions or grammar were rewritten. Both pages use the same shared styles and scripts; later content edits need to account for this separate snapshot.
+`test.html` is an alternate storytelling layout for comparison; `index.html` remains the primary page. It preserves all existing wording, headings, captions, photos, videos and other embeds. Its revised macro-to-micro order is estate/redevelopment (including both orbit videos and Text 12), neighbourhood (StoryMap, neighbourhood gallery, Text 10 and comparison), community (Text 1, Text 5, staff, basketball and social-worker placeholder), residents (Text 3, Mrs. Kan and Text 6), individual shops (Text 7, aquarium gallery, Text 2, Lee, Li Ying Kee gallery, Text 8 and Text 9), then closing. It adds a Community life section heading and updates navigation for this order. No transitions or grammar were rewritten. Both pages use the same shared styles and scripts; later content edits need to account for this separate snapshot.
 
 ## Source files
 
