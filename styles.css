@@ -174,3 +174,8 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
   background: var(--lime); color: var(--ink); font: inherit; font-size: .875rem; font-weight: 700; cursor: pointer;
 }
 .history-controls button:hover { background: #f7f4eb; }
+
+.knightlab-embed { display: block; width: 100%; border: 0; background: white; }
+.comparison-embed { margin-bottom: clamp(2rem, 5vw, 4rem); }
+.juxtapose.knightlab-embed { height: auto; aspect-ratio: 76 / 41.7; }
+.timeline-embed { margin-top: 1rem; }
