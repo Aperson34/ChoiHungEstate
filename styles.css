@@ -72,6 +72,10 @@ figcaption { padding-top: .65rem; color: var(--muted); font-size: .875rem; }
 .copy-placeholder p { margin-bottom: 0; color: var(--muted); }
 .film h3 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
 .film p { font-size: .875rem; margin: .3rem 0 0; }
+.interview-video figcaption { color: inherit; padding: 0; margin-bottom: 1rem; }
+.interview-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; }
+.interview-video p { margin-top: .75rem; }
+.interview-video a { display: inline-flex; align-items: center; min-height: 44px; }
 .chapter { padding-block: clamp(3rem, 7vw, 7rem); border-top: 1px solid var(--line); }
 .chapter:nth-of-type(even) { background: #eeeee2; }
 .chapter-heading { margin-bottom: clamp(1.6rem, 4vw, 3.5rem); }
