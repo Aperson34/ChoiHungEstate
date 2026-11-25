@@ -38,8 +38,8 @@ nav a:hover, nav a:focus-visible { text-decoration: underline; }
 .eyebrow { font-size: .76rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .hero .eyebrow { color: var(--lime); margin: 0 0 1.2rem; }
 h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; }
-h1 { font-size: clamp(2.9rem, 6.9vw, 6.6rem); line-height: .99; letter-spacing: -.056em; max-width: 13ch; }
-h1 em { color: var(--lime); font-weight: inherit; }
+h1 { font-size: clamp(2.9rem, 6.9vw, 6.6rem); line-height: .99; letter-spacing: -.056em; }
+h1 em { color: var(--lime); font-weight: inherit; white-space: nowrap; }
 .deck { max-width: 38rem; margin: 1.6rem 0 1.8rem; font-size: clamp(1rem, 2vw, 1.2rem); }
 .story-link { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; font-weight: 700; text-decoration: none; }
 .story-link span { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid #ffffff80; border-radius: 50%; transition: background 180ms, color 180ms; }
