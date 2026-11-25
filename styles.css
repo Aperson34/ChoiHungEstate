@@ -66,7 +66,7 @@ figcaption { padding-top: .65rem; color: var(--muted); font-size: .875rem; }
 .opening > * + *, .chapter > .prose + *, .chapter > .film + *, .chapter > .interview-video + *,
 .chapter > .gallery-feature + *, .chapter > .comparison-embed + *,
 .chapter > .copy-placeholder + * { margin-top: clamp(2rem, 5vw, 4rem); }
-.gallery-feature, .comparison-embed { max-width: 52rem; }
+.gallery-feature { max-width: 52rem; }
 .copy-placeholder { border-left: 3px solid var(--placeholder); padding: 1.25rem; }
 .copy-placeholder p { margin-bottom: 0; color: var(--muted); }
 .film h3 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
@@ -184,5 +184,5 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .history-controls button:hover { background: #f7f4eb; }
 
 .knightlab-embed { display: block; width: 100%; border: 0; background: white; }
-.comparison-embed { margin-top: clamp(2rem, 5vw, 4rem); }
+.comparison-embed { max-width: 950px; margin-top: clamp(2rem, 5vw, 4rem); }
 .timeline-embed { margin-top: 1rem; }
