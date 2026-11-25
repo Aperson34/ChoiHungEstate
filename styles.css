@@ -20,7 +20,7 @@ a { color: inherit; text-underline-offset: .23em; }
 a:hover { text-decoration-thickness: .14em; }
 :focus-visible { outline: 3px solid #b8461f; outline-offset: 4px; }
 .wrap { width: min(100% - 3rem, 76rem); margin-inline: auto; }
-.measure { width: min(100% - 3rem, 76rem); margin-inline: auto; }
+.measure { width: min(100% - 3rem, 65ch); margin-inline: auto; }
 .skip { position: fixed; z-index: 4; top: .5rem; left: .5rem; padding: .7rem 1rem; background: white; transform: translateY(-150%); }
 .skip:focus { transform: none; }
 .masthead { position: sticky; top: 0; z-index: 3; background: var(--paper); border-bottom: 1px solid var(--line); }
@@ -47,13 +47,12 @@ h1 em { color: var(--lime); font-weight: inherit; }
 .story-link:hover span { background: var(--lime); color: var(--ink); }
 .opening { padding-block: clamp(3rem, 8vw, 7rem); }
 .story-pair { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(1.5rem, 6vw, 6rem); margin-block: 0 2rem; }
-.story-pair:nth-of-type(even) > .gallery { order: 2; }
 .prose { font: clamp(1.12rem, 1.5vw, 1.3rem)/1.69 var(--display); }
 .prose a { color: var(--green); }
 .prose p:first-child { margin-top: 0; }
 .prose p:last-child { margin-bottom: 0; }
 .prose li + li { margin-top: .9rem; }
-.story-pair:first-child .prose p::first-letter { float: left; font-size: 3.9em; line-height: .8; padding: .07em .12em 0 0; color: var(--green); }
+.opening > .prose:first-child p::first-letter { float: left; font-size: 3.9em; line-height: .8; padding: .07em .12em 0 0; color: var(--green); }
 figcaption { padding-top: .65rem; color: var(--muted); font-size: .875rem; }
 .placeholder-label {
   display: inline-block;
@@ -65,7 +64,12 @@ figcaption { padding-top: .65rem; color: var(--muted); font-size: .875rem; }
 }
 .film { background: var(--placeholder); border-radius: .55rem; padding: clamp(1.4rem, 3vw, 2.5rem); color: white; }
 .film .placeholder-label { margin-bottom: .7rem; }
-.opening .film:not(:last-child) { margin-bottom: clamp(3.5rem, 9vw, 7.5rem); }
+.opening > * + *, .chapter > .prose + *, .chapter > .film + *,
+.chapter > .gallery-feature + *, .chapter > .comparison-embed + *,
+.chapter > .copy-placeholder + * { margin-top: clamp(2rem, 5vw, 4rem); }
+.gallery-feature, .comparison-embed { max-width: 52rem; }
+.copy-placeholder { border-left: 3px solid var(--placeholder); padding: 1.25rem; }
+.copy-placeholder p { margin-bottom: 0; color: var(--muted); }
 .film h3 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
 .film p { font-size: .875rem; margin: .3rem 0 0; }
 .chapter { padding-block: clamp(3rem, 7vw, 7rem); border-top: 1px solid var(--line); }
@@ -80,8 +84,9 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 @media (max-width: 48rem) {
   .wrap { width: calc(100% - 2rem); }
   .header-inner { flex-wrap: wrap; padding-top: .5rem; }
+  nav { flex-wrap: nowrap; width: 100%; overflow-x: auto; gap: 1.25rem; padding-bottom: .25rem; }
+  nav a { flex-shrink: 0; }
   .story-pair { grid-template-columns: 1fr; }
-  .story-pair:nth-of-type(even) > .gallery { order: initial; }
   .hero { background-image: linear-gradient(90deg, #17251ce8, #17251c80), url('assets/court.webp'); }
   .hero-inner { min-height: 0; }
 }
@@ -100,6 +105,7 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .crop.people img { transform: scale(1.75); transform-origin: 70% 80%; }
 .gallery-bar, .gallery-controls { display: flex; align-items: center; gap: .6rem; }
 .gallery-bar { justify-content: space-between; margin-top: .6rem; font-size: .75rem; color: var(--muted); }
+.gallery-controls { flex-shrink: 0; }
 .gallery-controls button {
   width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 50%;
   background: transparent; color: var(--green); cursor: pointer; font-size: 1.25rem;
@@ -176,6 +182,6 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 5.2rem); line-height: 1.02; letter-spacing
 .history-controls button:hover { background: #f7f4eb; }
 
 .knightlab-embed { display: block; width: 100%; border: 0; background: white; }
-.comparison-embed { margin-bottom: clamp(2rem, 5vw, 4rem); }
+.comparison-embed { margin-top: clamp(2rem, 5vw, 4rem); }
 .juxtapose.knightlab-embed { height: auto; aspect-ratio: 76 / 41.7; }
 .timeline-embed { margin-top: 1rem; }
