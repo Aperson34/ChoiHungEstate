@@ -4,6 +4,10 @@ Continue the editorial website update in [Aperson34/ChoiHungEstate](https://gith
 
 `test.html` is an alternate storytelling layout for comparison; `index.html` remains the primary page. It preserves all existing wording, headings, captions, photos, videos and other embeds. Its macro-to-micro order is estate/redevelopment (orbit video 1, animation, timeline, Text 4a/4b and Text 12), neighbourhood (StoryMap and Text 10), community (Text 1, Text 5, staff, basketball and social-worker placeholder), residents (Text 3, Mrs. Kan and Text 6), then individual shops. At the user’s request, the Choi Hung-to-Mei Tung orbit video, neighbourhood gallery and image comparison now form `#closing-media`, in that order, immediately before the closing section. The latest three-paragraph closing from the Text draft’s Text 13 has been implemented verbatim on `test.html`; the main page still has its original closing placeholder. No transitions or grammar were rewritten. Both pages use the same shared styles and scripts; later content edits need to account for this separate snapshot.
 
+## Later user update — November 26, 2026
+
+On `test.html`, the aquarium gallery is titled **Hung To Aquarium**. At the user’s request, its last photo, `PB151330`, has been removed; it now has 10 photos and starts at `1/10` (27 gallery photos overall). Do not restore that photo during future refreshes. The shared asset and `index.html` remain unchanged. The refresh notes below describe the earlier snapshot.
+
 ## Scheduled test-page refresh — November 26, 2026
 
 `test.html` now uses the latest **Text draft** (`t.dmg6reh31rxj`) headline, subtitle, headings, finished article blocks and closing, plus all 27 captions verbatim from **photo gallery captions** (`t.pinuc92q13nr`). Source links and quotations are preserved. The closing currently ends with the source typo `under way.b`; it was deliberately retained, not corrected. Text 11 remains the unfinished social-worker placeholder.
